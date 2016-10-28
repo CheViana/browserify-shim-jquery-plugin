@@ -1,0 +1,1 @@
+# Example of how to use browserify-shim for jquery plugins
