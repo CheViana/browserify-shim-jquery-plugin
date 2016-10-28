@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "browserify": "~2.36.1",
-    "browserify-shim": "~3.0.0"
+    "browserify-shim": "~3.0.0",
+    "uswds": "~0.13"
   }
 }
