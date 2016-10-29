@@ -5,11 +5,6 @@
   "main": "./js/entry.js",  
   "browserify-shim": {
     "jquery": "global:jQuery"
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
   },  
   "license": "BSD",
   "dependencies": {
