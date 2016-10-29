@@ -6,7 +6,7 @@ First, add path to global node modules to your path so that browserify command c
 Or use /node_modules/.bin/browserify instead of browserify.
     
     npm install
-    browserify -d . > js/bundle.js -t [ babelify --presets=babel-preset-es2015 ] -t browserify-shim
+    browserify -d . > js/bundle.js -t [ babelify --presets=babel-preset-es2015 ] -t browserify-shim    
 
 After that open index.html in browser and check.
 
@@ -60,3 +60,20 @@ Starting from browserify-shim 3.2.0
             'magnific-popup': '~1.1' },
          lookedUp: false },
       messages: [ { resolved: {} } ] }
+
+
+## Workaround
+
+Instead of
+
+    "browserify-shim": {
+      "jquery": "global:jQuery"
+    }
+
+Use
+
+    "browserify-shim": {
+      "jquery": {"exports": "jQuery"}
+    }
+
+Then works with latest versions of shim & browserify.

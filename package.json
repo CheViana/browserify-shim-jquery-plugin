@@ -4,8 +4,8 @@
   "description": "Example of using browserify-shim to shim jquery for jquery plugins. Forked from shim-jquery example of Browserify.",
   "main": "./js/entry.js",  
   "browserify-shim": {
-    "jquery": "global:jQuery"
-  },  
+    "jquery": {"exports": "jQuery"}
+  },
   "license": "BSD",
   "dependencies": {
     "request": "~2.12.0",
@@ -13,8 +13,8 @@
     "magnific-popup": "~1.1"
   },
   "devDependencies": {
-    "browserify": "~3.0.0",
-    "browserify-shim": "~3.1.0",
+    "browserify": "~13.1",
+    "browserify-shim": "~3.8",
     "babelify": "~7.3",
     "babel-preset-es2015": "~6.16",
     "uswds": "~0.13"
