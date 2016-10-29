@@ -1,7 +1,7 @@
-var $ = require('jquery')
-  , jqVersion = $().jquery;
+import $ from 'jquery';
+import 'magnific-popup';
 
-require('magnific-popup');
+var jqVersion = $().jquery;
 
 $('.gallery').magnificPopup({
   delegate: 'a',
