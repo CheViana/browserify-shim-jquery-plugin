@@ -12,20 +12,10 @@ After that open index.html in browser and check.
 
 ## Versions of browserify & etc that make it work:
 
-     browserify@2.36.1
-    │ │ ├─┬ buffer-browserify@0.2.5
-    │ │ ├── console-browserify@1.0.3
-    │ │ ├── constants-browserify@0.0.1
-    │ │ ├── crypto-browserify@1.0.9
-    │ │ ├─┬ http-browserify@0.1.14
-    │ │ ├── os-browserify@0.1.2
-    │ │ ├─┬ vm-browserify@0.0.4
-    │ │ └─┬ zlib-browserify@0.0.3
-    │     ├── uglify-to-browserify@1.0.2
-    ├─┬ browserify-shim@3.0.6
+    "browserify": "~3.0.0",
+    "browserify-shim": "~3.1.0"
 
 
 ## Versions that don't work:
 
-    "browserify": "~13.1",
-    "browserify-shim": "~3.8"
+Starting from browserify-shim 3.2.0
