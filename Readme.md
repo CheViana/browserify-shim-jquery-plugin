@@ -1,4 +1,4 @@
-# Example of how to use browserify-shim for jquery plugins
+# Example of how browserify-shim doesn't work with jQuery plugin if version > 3.2 is used
 
 ## Run example
 
